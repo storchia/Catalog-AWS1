@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<title>Catalog App</title>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Istok+Web:700" rel="stylesheet">
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+	</head>
+<div class="top_banner">
+  <div class="title">
+    Catalog App
+  </div>
+</div>
+<body>
+  <div class = "newcat">
+<div class = "head1"><h1><u>New Category</u></h1></div>
+<form method = 'POST' action = '{{url_for('newCategory')}}'>
+  <input type= 'text' name = 'categname' size="60" placeholder='Insert New Category here'>
+  <p><input type = "submit" class="create" value='Create '><p>
+  <a href = '{{url_for('showCategories')}}'>Cancel
+</form>
+</div>
+</body>
+</html>

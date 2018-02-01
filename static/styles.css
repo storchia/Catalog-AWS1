@@ -1,0 +1,257 @@
+body           {
+  font-family: 'Istok Web', sans-serif;
+  margin: 0px;
+  font-size: 32px;
+  background-image: url('http://images.all-free-download.com/images/graphiclarge/violet_background_210653.jpg');
+  background-size: 100%;
+
+
+}
+
+.top_banner {
+  background-image: url('https://danielalozza.files.wordpress.com/2011/06/cropped-header2.jpg');
+  margin-top: 0px;
+  height: 120px;
+}
+
+.title {
+  padding-top: 18px;
+  margin-left: 80px;
+  font-size: 60px;
+}
+
+.button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
+  margin-right: 14%;
+  border-radius: 12px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  margin-top: 18px;
+}
+
+.button a {
+      margin-top: 6px;
+}
+
+.login_background {
+  background-image: url('https://image.freepik.com/free-vector/grey-linen-texture-background_1053-253.jpg');
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 6%;
+}
+
+.login_background h2 {
+  text-align: center;
+}
+
+#signinButton {
+  margin-left: 30%;
+}
+
+button {
+  float: right;
+  margin-right: 38%;
+}
+
+.button a {
+  color: white;
+}
+
+.list {
+  background-image: url('https://image.freepik.com/free-vector/grey-linen-texture-background_1053-253.jpg');
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px;
+  font-size: 26px;
+}
+
+.content {
+  margin-left: 8px;
+}
+
+.newcat {
+  background-image: url('https://image.freepik.com/free-vector/grey-linen-texture-background_1053-253.jpg');
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px;
+  font-size: 26px;
+}
+
+.head1 {
+  margin-left: 8px;
+}
+
+input {
+  margin-left: 8px;
+}
+
+.newcat a {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.editcat a {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.create {
+  background-color: #000000;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 14%;
+  border-radius: 6px;
+}
+
+.category_info {
+  background-image: url('https://image.freepik.com/free-vector/grey-linen-texture-background_1053-253.jpg');
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px;
+  font-size: 26px;
+}
+
+.content h1 {
+  margin-bottom: 5px;
+}
+
+.editanddel {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.link {
+  font-size: 16px;
+}
+
+.editcat {
+  background-image: url('https://image.freepik.com/free-vector/grey-linen-texture-background_1053-253.jpg');
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px;
+  font-size: 26px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.delcat {
+  background-image: url('https://image.freepik.com/free-vector/grey-linen-texture-background_1053-253.jpg');
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.del {
+  background-color: #000000;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 28px;
+  cursor: pointer;
+  border-radius: 6px;
+  width: 25%;
+  }
+
+.editprod {
+  background-image: url('https://image.freepik.com/free-vector/grey-linen-texture-background_1053-253.jpg');
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px;
+  font-size: 26px;
+}
+
+.nameprod {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.nameanddesc {
+  margin-left: 8px;
+}
+
+.name input {
+  display: block;
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+.desc textarea {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.editprod a {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.editbutton {
+  background-color: #000000;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 14%;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.newprod {
+  background-image: url('https://image.freepik.com/free-vector/grey-linen-texture-background_1053-253.jpg');
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px;
+  font-size: 26px;
+}
+
+.newprod a {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.createbutton {
+  background-color: #000000;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 14%;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.desc {
+  font-size: 20px;
+}

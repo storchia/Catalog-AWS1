@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<title>Catalog App</title>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Istok+Web:700" rel="stylesheet">
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+	</head>
+<div class="top_banner">
+  <div class="title">
+    Catalog App
+  </div>
+</div>
+<body>
+  <div class = "delcat">
+    <div class = "head1">
+      <h1> Are you sure you want to delete <font color = "red"><u>{{categ.name}}</u></font>?</h1>
+    </div>
+   <form method = 'POST' action = '{{url_for('deleteCategory',category_id=category_id)}}'>
+     <h2><input type = "submit" class="del" value='Delete '></h2>
+      <a href = '{{url_for('showProducts', category_id=category_id)}}'>Cancel
+   </form>
+ </div>
+</body>
+</html>

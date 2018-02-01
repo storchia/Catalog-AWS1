@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<title>Catalog App</title>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Istok+Web:700" rel="stylesheet">
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+	</head>
+<body>
+<div class="top_banner">
+  <div class="title">
+    Catalog App
+  </div>
+<body>
+  <div class = "category_info">
+    <div class="content">
+      <div class = "categ_title"><h1><u>{{category.name}}</u></h1></div>
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+           {% for message in messages %}
+              <li> <strong>{{message}}</strong> </li>
+            {%endfor%}
+        {% endif %}
+      {% endwith %}
+      <div class = "editanddel">
+        <a class="edit" href = '{{url_for('editCategory',category_id=category.id)}}'>Edit Category</a> <br>
+        <a class="delete" href = '{{url_for('deleteCategory',category_id=category.id)}}'>Delete Category</a>
+      </div>
+              {% for i in prods %}
+                   <div class = "namedesc">
+                     <strong><span class = "name"><u>{{i.name}}</u></span></strong>
+                     <div class = "desc">{{i.description}}</div>
+                   </div>
+                  <div class = "link"><a href = '{{url_for('editProduct',category_id = category.id,id = i.id)}}'>Edit Product</a>
+                    |
+                  <a href = '{{url_for('deleteProduct',category_id = category.id,id = i.id)}}'>Delete Product</a></div>
+              {% endfor %}
+        <hr>
+      <a href = '{{url_for('newProduct',category_id=category.id)}}'>Add New Product</a><br>
+      <a href = '{{url_for('showCategories')}}'>Back to Category List</h2>
+    </div>
+</div>
+</body>
+  </html>

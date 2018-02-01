@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<title>Catalog App</title>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Istok+Web:700" rel="stylesheet">
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+	</head>
+<body>
+<div class="top_banner">
+  <div class="title">
+    Catalog App
+    <div class="button">
+      {%if 'username' not in session %}
+			<a href="{{url_for('showLogin')}}">Login </a>
+			{% else %}
+			<a href="{{url_for('disconnect')}}">Logout </a>
+			{% endif %}
+    </div>
+  </div>
+</div>
+<body>
+  <div class = "category_info">
+    <div class="content">
+      <div class = "head"><h1><u>{{category.name}}</u></h1></div>
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+           {% for message in messages %}
+              <li> <strong>{{message}}</strong> </li>
+            {% endfor %}
+        {% endif %}
+      {% endwith %}
+      <hr class="menubreak">
+              {% for i in prods %}
+                   <div class = "namedesc">
+                     <strong><span class = "name">{{i.name}}</span></strong>
+                     <div class = "desc">{{i.description}}</div>
+                   </div>
+                  <br>
+              {% endfor %}
+      <b><a href = '{{url_for('showCategories')}}'>Back to Category List</h2></b>
+    </div>
+</div>
+</body>
+  </html>
